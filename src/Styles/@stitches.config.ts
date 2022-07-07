@@ -42,6 +42,7 @@ export const {
         },
         fonts:{
             "barlow":"barlow",
+            "cookie":"Cookie"
         },
 
         fontWeights:{
@@ -87,7 +88,7 @@ export const {
         },
 
         transitions:{
-            "coAndBg":"color 0.5s , background-color 0.5s , fill 0.5s",
+            "coAndBg":"color 0.5s , background-color 0.5s , fill 0.5s , stroke 0.5s , transform 0.1s",
             "shadowing":"box-shadow 0.5s"
         },
         space:{
@@ -102,6 +103,7 @@ export const {
             9:"86px",
             10:"98px",
             11:"112px",
+            12:"130px",
         },
         radii:{
             "50":"50%"
@@ -116,6 +118,9 @@ export const {
 
     } , 
     media:{
+        "bp0":"(max-width:1300px)",
+        "bp0-1":"(max-width:1200px)",
+        "bp0-2":"(max-width:1100px)",
         "bp1":"(max-width:1000px)",
         "bp2":"(max-width:800px)",
         
@@ -125,6 +130,13 @@ export const {
 
     },
     utils:{
+        "logo":(data:string[])=>({
+            fontFamily:"$cookie" ,
+            fontWeight:data[0],
+            fontSize:data[1],
+            lineHeight:"auto",
+            fontStyle:"normal"
+         }),
         "display1":(weight:string)=>({
             fontFamily:"$barlow" ,
             fontWeight:weight,

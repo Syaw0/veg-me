@@ -12,6 +12,18 @@ const fadein = keyframes({
 })
 
 
+const fadeout = keyframes({
+    "0%":{
+        opac:"1",
+
+    },
+    "100%":{
+        opac:"0",
+
+    }
+})
+
+
 
 const fadeinTop = keyframes({
     "0%":{
@@ -24,4 +36,4 @@ const fadeinTop = keyframes({
     }
 })
 
-export {fadein , fadeinTop}
+export {fadein , fadeinTop , fadeout}
